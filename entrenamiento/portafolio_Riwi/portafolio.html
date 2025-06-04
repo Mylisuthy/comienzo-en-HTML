@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Portafolio JuanDGonzalezH</title>
+  <meta name="description" content="Portafolio de JuanDGonzalezH, entusiasta y creativo developer.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portafolio de un entusiasta por la tecnología en HTML">
+  <meta property="og:image" content="utiles/juanch0.jpg">
+  <meta property="og:image:alt" content="Una fotografía de JuanDGonzalezH">
+
+  <!-- SEO -->
+  <link rel="alternate" href="/portafolio.html" hreflang="en">
+  <link rel="canonical" href="/portafolio.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Estética -->
+  <meta name="theme-color" content="#FFB6C1">
+  <link rel="icon" type="image/png" href="./utiles/iconoPortafo.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+  <h1 class="neon-text">Portafolio JuanDGonzalezH</h1>
+  <nav>
+    <a class="neon-hover" href="#presentacion">Presentacion</a>
+    <a class="neon-hover" href="#proyectos">Proyectos</a>
+    <a class="neon-hover" href="#mi">Sobre Mi</a>
+    <a class="neon-hover" href="#contacto">Contacto</a>
+  </nav>
+  </header>
+  
+  <main>
+    <img class="imagen-circular aro-neon" title="Foto Juan David" src="./utiles/perfile.webp" alt="Fotografía de presentación de Juan David González viendo a cámara">
+    <section id="presentacion" class="seccion-observable">
+      <aside class="perfil">
+        <div class="contenido">
+          <p>Programador junior con interés en <strong>convertirse en Full Stack</strong>.</p>
+          
+          <h2>Intereses</h2>
+          <ul>
+            <li>Desarrollar mis habilidades como programador</li>
+            <li>Ampliar mis conocimientos en múltiples idiomas</li>
+            <li>Incursionar en la robótica y todos sus campos</li>
+          </ul>
+          
+          <h2>Tecnologías actuales</h2>
+          <ol>
+            <li>GitHub / Git</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ol>
+          
+          <p class="loader-retro">coming more...</p>
+        </div>
+      </aside>
+    </section>
+      
+    
+    <section id="proyectos" class="seccion-observable">
+      <h2>Proyectos en progreso</h2>
+      <article>
+        <header>
+          <h4>Sitio web para visualización y venta de zapatos</h4>
+          </header>
+          <p>Sitio web amigable e intuitivo para visualización y selección de productos.</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer><br>
+          <img class="imagen-cuadriculada"  src="./utiles/Icon_portafolio-removebg-preview.png" alt="Imagen ecommerce zapatos" class="imagen-cuadriculada">
+        </article><br>
+        <div class="loader-retro">Diseñando...</div>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h4>Sitio web artístico con animaciones</h4>
+          </header>
+          <p>Sitio web hecho con HTML, CSS y JavaScript para practicar animaciones con múltiples proyectos de arte.</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer><br>
+          <img class="imagen-cuadriculada" src="./utiles/pageArt.png" alt="imagen pagina de arte" class="imagen-cuadriculada">
+        </article><br>
+        <div class="loader-retro">In progress...</div>
+      </section>
+
+      <section>
+        <article>
+          <header>
+            <h4>Sitio web experimental para atención al cliente y agendación de citas para un hospital</h4>
+          </header>
+          <p>Sitio web con interfaces legibles, intuitivo y altamente dinámico, con interacción al usuario.</p>
+          <footer>
+            <small>Tecnologías utilizadas: HTML, CSS, JavaScript</small>
+          </footer><br>
+          <img class="imagen-cuadriculada" src="./utiles/hospital.png" alt="imagen pagina hospital" class="imagen-cuadriculada">
+        </article><br>
+        <div class="loader-retro">En progreso...</div>
+      </section>
+
+      <section id="mi" class="seccion-observable">
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Qué formación tienes?</summary>
+          <p>Riwi, comienzo en programación</p>
+          <p>Universidad de Envigado, Ingeniería de Software</p>
+          <p>En progreso</p>
+        </details>
+        <details>
+          <summary>¿Cuáles son tus hobbies?</summary>
+          <ul>
+            <li>Anime</li>
+            <li>Videojuegos</li>
+            <li>Deporte</li>
+            <li>Tecnología</li>
+          </ul>
+        </details>
+        <details>
+          <summary>¿Qué géneros de música te gustan?</summary>
+          <ul>
+            <li>Rock</li>
+            <li>Reguetón</li>
+            <li>Electrónica</li>
+            <li>Ska</li>
+            <li>Punk ruso</li>
+            <li>Salsa</li>
+            <li>Clásica</li>
+          </ul>
+        </details>
+      </section>
+
+      <section id="contacto" class="contacto seccion-observable">
+      <h2>Formulario de contacto</h2>
+      <form class="formulario" method="post" action="/">
+        <fieldset>
+          <legend>Información personal</legend>
+
+          <label>Nombre
+            <input type="text" name="name" placeholder="Juan David Gonzalez" required>
+          </label>
+
+          <label>Email
+            <input type="email" name="email" placeholder="usuario@dominio.co" required>
+          </label>
+
+          <label>telefono
+            <input type="tel" name="phone" placeholder="+573002002222" required pattern="[0-9]{9}">
+          </label>
+
+          <label for="why">¿Por qué quieres contactar?
+            <select name="why" id="why">
+              <option value="1">Trabajo</option>
+              <option value="2">Más información</option>
+              <option value="3">Dudas</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+  </main><br>
+
+  <footer>
+    <h3 class="neon-text">medios de contacto</h3>
+
+    <a 
+    target="_blank" 
+    rel="noreferrer" 
+    href="mailto:juanch052048@gmail.com">
+    <button class="image-button">
+      <img 
+      src="./utiles/gmail.png" 
+      alt="button gmail">
+    </button>
+    </a>
+
+    <a 
+    target="_blank" 
+    rel="noreferrer" 
+    href="https://wa.me/3004527640?text=Hola_bengo_de_tu_portafolio">
+
+      <button class="image-button">
+        <img 
+        src="./utiles/whatsapp.png" 
+        alt="button whatsapp">
+      </button>
+    </a>
+
+    <a
+    target="_blank"
+    rel="noreferrer"
+    href="https://github.com/Mylisuthy" >
+
+      <button class="image-button">
+        <img 
+        src="./utiles/github-logo.png" 
+        href="https://github.com/Mylisuthy" 
+        alt="button github"
+        >
+      </button>
+    </a>
+
+    <a
+    target="_blank"
+    rel="noreferrer" 
+    href="https://www.instagram.com/juanch0pk/"
+    >
+      <button class="image-button">
+        <img 
+        src="./utiles/instagram.png" 
+        alt="boton instagram" 
+        >
+      </button>
+    </a>
+  </footer>
+  <script>
+    const secciones = document.querySelectorAll('.seccion-observable');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    secciones.forEach(seccion => {
+      observer.observe(seccion);
+    });
+  </script>
+</body>
+</html>
