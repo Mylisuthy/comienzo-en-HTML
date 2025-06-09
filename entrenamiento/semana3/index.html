@@ -8,27 +8,24 @@
 </head>
 <body>
     <header>
-        <img src="logo simple cliqueable" alt="">
-
+        <div class="brand">            
+            <img src="./Assens/logo.png" alt="Logo de AmplitecH" class="logo">
+            <h1>AmplitecH</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#Principal"></a>Principal</li>
-                <li><a href="#sobre"></a>sobre nosotros</li>
-                <li><a href="#Servicios"></a>Servicios</li>
+                <li><a href="#Principal">Principal</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#contacto">contactanos</a></li>
             </ul>
         </nav>
-
-        <div>
-            <a href="#contacto">contactanos</a>
-        </div>
     </header>
 
     <main>
         <section id="Principal">
             <article>
-                <h2>
-                    Somos <strong>AmplitecH</strong>
-                </h2>
+                <h2>Somos <strong>AmplitecH</strong></h2>
                 <p>
                     una empresa de soluciones tech <br>
                     especializada en <strong>software</strong> y <strong>diseño</strong><br>
@@ -38,87 +35,67 @@
                 </p>
             </article>
             <div>
-                <img src="imagen, grupo de diseñadores" alt="">
+                <img src="./Assens/equipo_trabajo.png" alt="imagenm tipo arte equipo de trabajo" class="img-equipo">
             </div>
         </section>
 
-        <section id="sobre">
+        <section id="nosotros">
             <h2>
                 AmplitecH
             </h2>
             <article>
-                <p><legend>Información personal</legend>
+                <p>
                     AmplitecH nace con el propocito de dar vida y estilos unicos <br>
-                    a toda clase de proyectos y empresas que desean espandir sus <br>
+                    a toda clase de proyectos y empresas que desean expandir sus <br>
                     <strong>orizontes en la web</strong>
                 </p>
-                <img src="imagen de apoyo alusiva" alt="">
             </article>
+
             <article>
-                <h3>
-                    Que hacemos
-                </h3>
+                <h3>Que hacemos</h3>
                 <p>
-                    por medio de software o aplicaciones web ofrecemos expancion <br>
+                    por medio de software o aplicaciones web ofrecemos expansión <br>
                     visibilidad e interaccion con tu publico con sitios <br>
                     <strong>sitios intuitivos y dinamicos</strong>
                 </p>
             </article>
         </section>
         
-        <section id="Servicios" class="grid-container">
-            <h2>
-                con nosotros podras encontrar
-            </h2>
-            <ul>
-                <div class="grid-item">
-                    <li>
-                        <h3>
-                            Desarrollo de software y aplicaciones a medida
-                        </h3>
-                        <p>
-                            transformamos tus necesidades en soluciones
-                        </p>
-                        <img src="" alt="">
-                    </li>
+        <section id="servicios">
+            <h2>con nosotros podras encontrar</h2>
+            <div class="servicios-contenedor">
+                <div class="servicio">  
+                    <div class="redit">                        
+                        <h3>Desarrollo de software y aplicaciones a medida</h3>
+                        <p>transformamos tus necesidades en soluciones</p>
+                    </div>                 
+                    <img src="./Assens/a_medida.png" alt="imagen tipo dibujo con un chico diseñando" class="img-equipo">                 
                 </div>
             
-                <div class="grid-item">
-                    <li>
-                        <h3>
-                            Mantenimiento y soporte técnico
-                        </h3>
-                        <p>
-                            luego de recrear tus ideas ayudamos a que perduren en el paso del tiempo
-                        </p>
-                        <img src="" alt="">
-                    </li>
+                <div class="servicio">
+                    <div class="redit">                       
+                        <h3>Mantenimiento y soporte técnico</h3>
+                        <p>luego de recrear tus ideas ayudamos a que perduren en el paso del tiempo</p>
+                    </div>               
+                    <img src="./Assens/soporte_lol.png" alt="foto dibujo chica en computadora" class="img-equipo">              
                 </div>
             
-                <div class="grid-item">                    
-                    <li>
-                        <h3>
-                            Consultoría tecnológica
-                        </h3>
-                        <p>
-                            te ayudamos a encontrar la mejor forma de lograr tus obgetivos
-                        </p>
-                        <img src="" alt="">
-                    </li>
+                <div class="servicio">
+                    <div class="redit">                       
+                        <h3>Consultoría tecnológica</h3>
+                        <p>te ayudamos a encontrar la mejor forma de lograr tus objetivos</p>
+                    </div>                       
+                    <img src="./Assens/tecnology_lol.png" alt="imagen representativa de un computador" class="img-equipo">               
                 </div>
                 
-                <div class="grid-item">
-                    <li>
-                        <h3>
-                            Integración de soluciones
-                        </h3>
-                        <p>
-                            encontramos la mejor forma de automatizar y brindar servicios optimos
-                        </p>
-                        <img src="" alt="">
-                    </li>
+                <div class="servicio">
+                    <div class="redit">                       
+                        <h3>Integración de soluciones</h3>
+                        <p>encontramos la mejor forma de automatizar y brindar servicios optimos</p>
+                    </div>              
+                    <img src="./Assens/solucion_lol.png" alt="imagen representativa en dibujo de solucion de problemas" class="img-equipo">           
                 </div>
-            </ul>
+            </div>
         </section>
         <section id="contacto">
             <h2>Formulario de contacto</h2>
@@ -139,7 +116,7 @@
 
                     <label for="why">¿Por qué quieres contactar?
                         <select name="why" id="why">
-                        <option value="1">acesoria</option>
+                        <option value="1">asesoría</option>
                         <option value="2">Más información</option>
                         <option value="3">trabajar juntos</option>
                         <option value="4">Dudas</option>
@@ -151,8 +128,9 @@
             </form>
         </section>
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; hecho con cansancio por JuanDGonzalezH</p>
     </footer>
     
 </body>
