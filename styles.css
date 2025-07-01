@@ -18,6 +18,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0 10px;
+    cursor: url('./assets/cursor.cur'),
+            url('./assets/cursor_2.png'), 
+             auto;
 }
 
 /* ========================
@@ -33,6 +38,8 @@ body {
     border-radius: 15px;
     background-color: #2c1b12;
     padding: 20px;
+    max-width: 1500px;
+    overflow: hidden;
     box-shadow: 0 0 20px rgba(176, 141, 87, 0.6);
 }
 
@@ -74,6 +81,7 @@ body {
     border: 2px solid #b08d57;
     border-radius: 10px;
     padding: 15px;
+    max-height: 100%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -242,96 +250,155 @@ body {
 }
 
 /* ========================
-   Cursor Custom
+   cards menu
 =========================== */
-body {
-    cursor: url('./assets/cursor.cur'),
-            url('./assets/cursor_2.png'), 
-             auto;
-}
-
-/* ======= MENÚ DE CARTAS (ACORDEÓN) ======= */
 #menu {
-  width: 90%;
-  max-width: 1200px;
-  margin: 2rem auto 1rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto 1rem;
 }
 
 .grupo-epoca {
-  margin-bottom: 1rem;
-  border: 1px solid #b08d57;
-  border-radius: 8px;
-  overflow: hidden;
+    margin-bottom: 1rem;
+    border: 1px solid #b08d57;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .grupo-header {
-  background: #4b3321;
-  color: #f5e4c3;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background 0.3s;
+    background: #4b3321;
+    color: #f5e4c3;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
 }
 
 .grupo-header:hover { background: #5c412b; }
 
 .grupo-header .flecha {
-  transition: transform 0.3s;
+transition: transform 0.3s;
 }
 
 .grupo-header.abierto .flecha {
-  transform: rotate(90deg);
+transform: rotate(90deg);
 }
 
 .cartas-wrap {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.35s ease-out;
-  background: #2c1b12;
-  padding: 0 10px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.35s ease-out;
+background: #2c1b12;
+padding: 0 10px;
 }
 
 .cartas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-  gap: 1rem;
-  justify-items: center;
-  padding: 1rem 0;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+gap: 1rem;
+justify-items: center;
+padding: 1rem 0;
 }
 
 .carta {
-  background: #4b3321;
-  border: 1px solid #b08d57;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 260px;
-  min-height: 230px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: transform .25s, background-color .25s;
+background: #4b3321;
+border: 1px solid #b08d57;
+border-radius: 8px;
+padding: 1rem;
+width: 260px;
+min-height: 230px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: transform .25s, background-color .25s;
 }
 
 .carta:hover {
-  transform: translateY(-6px);
-  background-color: #5c412b;
+transform: translateY(-6px);
+background-color: #5c412b;
 }
 
 .carta img {
-  width: 240px;
-  height: 240px;
-  object-fit: contain;
-  margin-bottom: .6rem;
+width: 240px;
+height: 240px;
+object-fit: contain;
+margin-bottom: .6rem;
 }
 
 .carta h4 {
-  color: #f5e4c3;
-  font-size: .95rem;
-  margin: 0;
-  text-align: center;
+color: #f5e4c3;
+font-size: .95rem;
+margin: 0;
+text-align: center;
+}
+
+/* ========================
+   Responsive Design
+=========================== */
+
+
+@media (max-width: 1024px) {
+    body {
+        height: auto;         
+        align-items: flex-start;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        height: auto;         
+    }
+
+    .personaje-panel,
+    .chat-box,
+    .panel-derecho {
+        margin-bottom: 20px;
+    }
+
+    .chat-box {
+        max-height: 400px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .input-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-box input,
+    .input-box button {
+        width: 100%;
+    }
+
+    .personaje-panel h2 {
+        font-size: 20px;
+    }
+
+    .personaje-panel p {
+        font-size: 14px;
+    }
+
+    .chat-box {
+        max-height: 300px;
+    }
 }
